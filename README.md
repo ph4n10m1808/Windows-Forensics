@@ -92,16 +92,17 @@ Note: Ảnh hưởng đến tất cả người dùng.
 
 `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters`: Quản lý việc prefetching trong hệ thống, làm tăng hiệu suất khi khởi động ứng dụng và hệ thống
 EnablePrefetcher Key:
-0 = Disabled
-1 = Application prefetching enabled
-2 = Boot prefetching enabled (chỉ áp dụng trên Windows 2003)
-3 = Application và Boot prefetching enabled (mặc định).
-`HKEY_LOCAL_MACHINE\SAM\Domains\Account`: Chứa thông tin về tài khoản người dùng và nhóm trên hệ thố
-`HKEY_LOCAL_MACHINE\SAM\Domains\Users`: Chứa thông tin chi tiết về các tài khoản người dùng, bao gồm SID (Security Identifier), mật khẩu băm (hash), và các thông tin khác
+
+- 0 = Disabled
+- 1 = Application prefetching enabled
+- 2 = Boot prefetching enabled (chỉ áp dụng trên Windows 2003)
+- 3 = Application và Boot prefetching enabled (mặc định).  
+`HKEY_LOCAL_MACHINE\SAM\Domains\Account`: Chứa thông tin về tài khoản người dùng và nhóm trên hệ thống  
+`HKEY_LOCAL_MACHINE\SAM\Domains\Users`: Chứa thông tin chi tiết về các tài khoản người dùng, bao gồm SID (Security Identifier), mật khẩu băm (hash), và các thông tin khác  
 
 ### Browser
 
-Trình duyệt web là nguồn cung cấp dữ liệu phong phú từ lịch sử duyệt web đến các tệp lưu trữ và thông tin người dùng.
+Trình duyệt web là nơi mà người dùng có thể truy cập vào các website. Đây là nơi chúng ta có thể điều tra để thu thập các thông tin liên quan đến forensics.
 
 #### Dữ liệu và vị trí lưu trữ
 
